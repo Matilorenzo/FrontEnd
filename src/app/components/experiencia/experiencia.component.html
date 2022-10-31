@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="experiencia.component.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+
+
+<!--creo listas no ordenadas-->
+<div class="row">
+    <h1> Expriencia laboral </h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+            Nueva Experiencia
+        </button>
+    </div>
+
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td>
+                        <h3>{{Experiencia.nombreE}}</h3>
+                    </td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td *ngIf="isLogged"><button class="btn btn-warning" routerLink="/editexp/{{Experiencia.id}}">
+                            Editar </button></td>
+                    <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Experiencia.id)"> Borrar
+                        </button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>

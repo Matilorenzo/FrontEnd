@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="contairner">
+        <div class="logo">
+            <img src="../../../assets/banner-ok-argentina-programa.jpg" id="logoAP">
+        </div>
+        <div class="redes">
+            <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+            <a href=""> <i class="fa-brands fa-square-github"></i> </a>
+            <a href=""> <i class="fa-brands fa-square-instagram"></i> </a>
+            <a href=""> <i class="fa-brands fa-square-twitter"></i> </a>
+            <a href=""> <i class="fa-brands fa-square-facebook"></i> </a>
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesion</button>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,23 @@
+.row {
+    padding: 15px;
+    background-color: black;
+    color: rgb(172, 137, 73);
+}
+
+ul {
+    margin-left: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    display: inline;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+h3, td{
+    color: rgb(172, 137, 73);
+    font-family: 'Playfair Display', serif;
+}

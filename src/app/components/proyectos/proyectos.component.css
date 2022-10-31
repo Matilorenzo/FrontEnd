@@ -1,0 +1,29 @@
+.row {
+    background-color: black;
+    padding: 20px;
+}
+
+.contenedor {
+    display: inline-block;
+    text-align: justify;
+}
+
+h1 {
+    color: rgb(172, 137, 73);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 70px;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    color: rgb(172, 137, 73);
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+}
+
+h2{
+    color: rgb(172, 137, 73);
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+}
